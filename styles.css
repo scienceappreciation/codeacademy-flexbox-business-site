@@ -1,0 +1,131 @@
+/* Fonts */
+@font-face {
+    font-family: "Oswald";
+    src: url("./fonts/Oswald/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: normal;
+    src: url("./fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+/* Universal Styles */
+html {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ebebeb;  
+}
+
+h1 {
+    font-size: 1.0625rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+/* Media Defaults */
+.compact {
+    display: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    background-color: #7a5050;
+    align-items: center;
+    border-bottom: 0.0625rem solid #7a4949;
+}
+
+header img {
+    margin: 0 0.125rem;
+    max-height: 100%;
+    max-width: 600px;
+}
+
+header .flex-spacer {
+    flex-grow: 2;
+}
+
+header nav {
+    margin-right: 1rem;
+    min-width: 180px;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    font-size: 1.0625rem;
+    text-decoration: none;
+    color: #dadada;
+    margin: 0 0.5rem;
+}
+
+/* Responsive Designs */
+
+/* Tablet Media Query */
+@media only screen and (min-width: 426px) and (max-width: 810px) {
+
+    /* Header */
+    header nav li {
+        background-color: #6b4040;
+        border-radius: 10%;
+        padding: 0.25rem;
+        transition: background-color 0.5s;
+    }
+
+    header nav li:active {
+        background-color: #8f0101;
+    }
+}
+
+/* Medium Phone/Tablet Media Query */
+@media only screen and (max-width: 426px) {
+
+    /* Header */
+    .compact {
+        display: block;
+    }
+
+    .wide {
+        display: none;
+    }
+
+    header nav li {
+        background-color: #8f0101;
+        border-radius: 0.35rem;
+        padding: 0.125rem;
+        transition: background-color 0.5s;
+    }
+
+    header nav li a {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Tiny Phone Media Query */
+@media only screen and (max-width: 222px) {
+
+    /* Header */
+    .compact {
+        display: none;
+    }
+}
+
