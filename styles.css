@@ -36,6 +36,13 @@ p {
     font-size: 0.75rem;
 }
 
+section {
+    background-color: #dadada;
+    margin: 3% 2%; 
+    height: 20rem;
+    width: 95%;
+}
+
 /* Media Defaults */
 .compact {
     display: none;
@@ -77,10 +84,25 @@ header nav li a {
     margin: 0 0.5rem;
 }
 
+/* Banner */
+#banner-section {
+    height: 12rem;
+}
+
+#banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 /* Responsive Designs */
 
 /* Tablet Media Query */
 @media only screen and (min-width: 426px) and (max-width: 810px) {
+    /* Universal */
+    section {
+        height: 13.4rem;
+    }
 
     /* Header */
     header nav li {
@@ -93,10 +115,20 @@ header nav li a {
     header nav li:active {
         background-color: #8f0101;
     }
+
+    /* Banner */
+    #banner-section {
+        height: 8rem;
+    }
 }
 
 /* Medium Phone/Tablet Media Query */
 @media only screen and (max-width: 426px) {
+
+    /* Universal */
+    section {
+        height: 10rem;
+    }
 
     /* Header */
     .compact {
@@ -118,14 +150,28 @@ header nav li a {
         padding: 0;
         margin: 0;
     }
+
+    /* Banner */
+    #banner-section {
+        height: 6rem;
+    }
 }
 
 /* Tiny Phone Media Query */
 @media only screen and (max-width: 222px) {
+    /* Universal */
+    section {
+        height: 10rem;
+    }
 
     /* Header */
     .compact {
         display: none;
+    }
+
+    /* Banner */
+    #banner-section {
+        height: 4rem;
     }
 }
 
