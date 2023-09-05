@@ -165,6 +165,35 @@ header nav li a {
     border: 0.125em solid #7a4949;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    background-color: #7a5050;
+    align-items: center;
+    border-bottom: 0.0625rem solid #7a4949;
+}
+
+footer p {
+    color: #dadada;
+    margin-left: 0.875rem;
+}
+
+footer .flex-spacer {
+    width: 8.5625rem;
+    height: 100%;
+}
+
+footer a {
+    color: #dadada;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 
 /* Responsive Designs */
 
@@ -196,6 +225,47 @@ header nav li a {
     /* Employees Section */
     #employees {
         font-size: 0.65rem;
+    }
+
+    /* Footer */
+    footer {
+        display: block;
+    }
+
+    footer .wide {
+        display: none;
+    }
+
+    footer .compact {
+        display: inline-block;
+    }
+
+    footer p {
+        margin-top: 1.125rem;
+        margin-left: 1.125rem;
+    }
+
+    footer a {
+        float: right;
+        margin-top: 0.75rem;
+        margin-right: 1.125rem;
+        background-color: #8f0101;
+        padding: 0.25rem;
+        border-radius: 10%;
+        font-size: 0.75rem;
+        transition: background-color 0.5s;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
+    footer a:active {
+        background-color: #ebebeb;
+    }
+
+    footer .flex-spacer {
+        display: none;
     }
 }
 
@@ -248,6 +318,47 @@ header nav li a {
         font-size: 0.35rem;
     }
 
+    /* Footer */
+    footer {
+        display: block;
+    }
+
+    footer .wide {
+        display: none;
+    }
+
+    footer .compact {
+        display: inline-block;
+    }
+
+    footer p {
+        margin-top: 1.125rem;
+        margin-left: 1.125rem;
+    }
+
+    footer a {
+        float: right;
+        margin-top: 0.75rem;
+        margin-right: 1.125rem;
+        background-color: #8f0101;
+        padding: 0.25rem;
+        border-radius: 10%;
+        font-size: 0.75rem;
+        transition: background-color 0.5s;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+    }
+
+    footer a:active {
+        background-color: #ebebeb;
+    }
+
+    footer .flex-spacer {
+        display: none;
+    }
+
 }
 
 /* Tiny Phone Media Query */
@@ -274,5 +385,12 @@ header nav li a {
 
     #chicken-section p {
         font-size: 0.625rem;
+    }
+
+    /* Footer */ 
+    footer a {
+        margin: 0;
+        position: relative;
+        bottom: 3.375rem;
     }
 }
